@@ -76,7 +76,7 @@
                         android:backgroundTint="@color/fondo_azul_2"
                         android:drawableStart="@drawable/ic_user"
                         android:ems="10"
-                        android:hint=" Ingrese Usuario"
+                        android:hint="  Ingrese Usuario"
                         android:inputType="textPersonName"
                         android:textColor="@color/fondo_azul_3"
                         android:textColorHint="@color/grisparatexto"
