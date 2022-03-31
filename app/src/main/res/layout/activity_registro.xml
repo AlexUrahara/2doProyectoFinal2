@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paleta_color_fondo"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Registro">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:elevation="4dp"
+                app:cardBackgroundColor="@color/fondo_azul_00"
+                app:cardCornerRadius="25dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/robotolight"
+                        android:text="Formulario de registro"
+                        android:textColor="@color/black"
+                        android:textSize="33sp" />
+
+                    <EditText
+                        android:id="@+id/text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="12dp"
+                        android:backgroundTint="@color/fondo_azul_2"
+                        android:drawableStart="@drawable/ic_user"
+                        android:ems="10"
+                        android:hint="Nombre de Usuario"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/fondo_azul_3"
+                        android:textColorHint="@color/grisparatexto" />
+
+                    <EditText
+                        android:id="@+id/text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:backgroundTint="@color/fondo_azul_2"
+                        android:drawableStart="@drawable/ic_lock"
+                        android:ems="10"
+                        android:hint="Contraseña"
+                        android:inputType="textPassword"
+                        android:textColor="@color/fondo_azul_3"
+                        android:textColorHint="@color/grisparatexto" />
+
+                    <EditText
+                        android:id="@+id/text5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:backgroundTint="@color/fondo_azul_2"
+                        android:drawableStart="@drawable/ic_email"
+                        android:ems="10"
+                        android:hint="Correo Electrónico"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/fondo_azul_3"
+                        android:textColorHint="@color/grisparatexto" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:layout_below="@+id/text5"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginEnd="32dp"
+                        android:backgroundTint="@color/fondo_azul_2"
+                        android:onClick="MainActivi"
+                        android:text="Registrar"
+                        app:cornerRadius="20dp" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:layout_below="@+id/button3"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="32dp"
+                        android:onClick="MainActivi"
+                        android:text="Cancelar"
+                        android:textColor="@color/fondo_azul_2"
+                        app:cornerRadius="20dp"
+                        app:layout_constraintTop_toBottomOf="@+id/button3"
+                        app:strokeColor="@color/fondo_azul_2" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/vinculo"
+                android:layout_width="139dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon14" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

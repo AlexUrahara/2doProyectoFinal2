@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".VerRegistros"
+    android:background="@color/fondo_azul_1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/paleta_color_fondo"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondo_azul_3">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/editar2" />
+
+            <TextView
+                android:id="@+id/txtsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="24dp"
+                android:gravity="right"
+                android:text="Registros Almacenados"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="351dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/txtsignup"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="17dp"
+                android:gravity="right"
+                android:text="Registros Almacenados en la Base de Datos MySQL\n Aquí se Implementa el Método CRUD"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/ListVerRegistros"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/fondo_azul_00"
+        android:onClick="añadir"
+        android:src="@drawable/user4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"></LinearLayout>
+
+</RelativeLayout>

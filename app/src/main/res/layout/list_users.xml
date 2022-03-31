@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:elevation="4dp"
+        app:cardBackgroundColor="@color/fondo_azul_00"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circlee"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center_vertical|center"
+           android:layout_marginTop="5dp"
+            android:text="1"
+            android:layout_marginStart="1dp"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="53dp"
+                android:src="@drawable/users2" />
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="100dp"
+                android:gravity="center"
+                android:text="Bienvenidos"
+                android:textColor="@color/fondo_azul_2"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/acciones"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="19dp"
+                android:gravity="center"
+                android:text="Modificar Registro"
+                android:textColor="@color/fondo_azul_4"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

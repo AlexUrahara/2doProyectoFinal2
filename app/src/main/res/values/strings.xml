@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">2do Proyecto Final</string>
+    <string name="text1">Inicio de Sesión</string>
+    <string name="text_txtv1.2">TEEN INFORMATICS</string>
+    <string name="text_txt2">Salir de la aplicación</string>
+    <string name="text_btn1">Cancelar</string>
+    <string name="text_btn4">Registrarse</string>
+    <string name="button1">Iniciar Sesión</string>
+    <string name="button3">Registrarme</string>
+    <string name="button2">Salir de la App</string>
+</resources>
