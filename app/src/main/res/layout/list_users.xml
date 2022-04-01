@@ -8,10 +8,10 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        android:layout_height="71dp"
+        android:layout_height="75dp"
         android:elevation="4dp"
         app:cardBackgroundColor="@color/fondo_azul_00"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="5dp"
         app:cardUseCompatPadding="true"
         >
 
@@ -22,7 +22,7 @@
             android:background="@drawable/circlee"
             android:fontFamily="@font/aldrich"
             android:gravity="center_vertical|center"
-           android:layout_marginTop="5dp"
+           android:layout_marginTop="7dp"
             android:text="1"
             android:layout_marginStart="1dp"
             android:textColor="@android:color/white"

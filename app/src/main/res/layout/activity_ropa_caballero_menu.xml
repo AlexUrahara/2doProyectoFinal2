@@ -9,42 +9,43 @@
     tools:context=".RopaCaballeroMenu">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="86dp"
         android:background="@color/fondo_azul_3">
 
         <ImageView
-            android:layout_width="80dp"
+            android:layout_width="180dp"
             android:layout_height="80dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="14dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/usuario3" />
+            android:src="@drawable/iconteen3" />
 
         <TextView
             android:id="@+id/hola"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="8dp"
             android:layout_marginRight="24dp"
             android:gravity="right"
             android:text="Bienvenido usuario"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18.5sp" />
 
         <TextView
             android:id="@+id/ver"
-            android:layout_width="166dp"
+            android:layout_width="246dp"
             android:layout_height="53dp"
             android:layout_below="@+id/hola"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="23dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="5dp"
             android:gravity="center"
-            android:text="Ver Registros"
+            android:text="Sleccione por medio del Check el producto que llevara"
             android:textColor="@color/white"
-            android:textSize="18dp"/>
+            android:textSize="12dp" />
 
     </RelativeLayout>
     <ScrollView
@@ -114,13 +115,16 @@
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <CheckBox
+                        android:id="@+id/camisa1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:layout_marginEnd="2dp"
-                        android:text="Clásica"
-                        android:textColor="@color/fondo_azul_1" />
+                        android:layout_marginEnd="1dp"
+                        android:onClick="capturardatos"
+                        android:textSize="1dp"
+                        android:textColor="@color/white"
+                        android:text="Camisa Colección Otoño" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -152,12 +156,9 @@
                         android:layout_width="50dp"
                         android:layout_height="40dp"
                         android:layout_toStartOf="@id/sumar1"
-                        android:clickable="false"
-                        android:editable="false"
-                        android:focusable="false"
                         android:fontFamily="@font/robotoregular"
                         android:inputType="none"
-                        android:text="5"
+                        android:text="0"
                         android:textAlignment="center"
                         android:textSize="15sp" />
 
@@ -230,13 +231,16 @@
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <CheckBox
+                        android:id="@+id/camisa2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:text="premium"
-                        android:textColor="@color/fondo_azul_1" />
+                        android:onClick="capturardatos"
+                        android:textSize="1dp"
+                        android:textColor="@color/white"
+                        android:text="Camisa de Fiestas"  />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -268,12 +272,9 @@
                         android:layout_width="50dp"
                         android:layout_height="40dp"
                         android:layout_toStartOf="@id/sumar2"
-                        android:clickable="false"
-                        android:editable="false"
-                        android:focusable="false"
                         android:fontFamily="@font/robotoregular"
                         android:inputType="none"
-                        android:text="5"
+                        android:text="0"
                         android:textAlignment="center"
                         android:textSize="15sp" />
 
@@ -346,13 +347,16 @@
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <CheckBox
+                        android:id="@+id/camisa3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:text="Clásica"
-                        android:textColor="@color/fondo_azul_1" />
+                        android:onClick="capturardatos"
+                        android:textSize="1dp"
+                        android:textColor="@color/white"
+                        android:text="Camisa Nocturn" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -384,12 +388,9 @@
                         android:layout_width="50dp"
                         android:layout_height="40dp"
                         android:layout_toStartOf="@id/sumar3"
-                        android:clickable="false"
-                        android:editable="false"
-                        android:focusable="false"
                         android:fontFamily="@font/robotoregular"
                         android:inputType="none"
-                        android:text="5"
+                        android:text="0"
                         android:textAlignment="center"
                         android:textSize="15sp" />
 
@@ -462,13 +463,16 @@
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <CheckBox
+                        android:id="@+id/camisa4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="premium"
-                        android:textColor="@color/fondo_azul_1"
                         android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true" />
+                        android:layout_centerVertical="true"
+                        android:onClick="capturardatos"
+                        android:textSize="1dp"
+                        android:textColor="@color/white"
+                        android:text="Especial de Diciembre"  />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -500,12 +504,9 @@
                         android:layout_width="50dp"
                         android:layout_height="40dp"
                         android:layout_toStartOf="@id/sumar4"
-                        android:clickable="false"
-                        android:editable="false"
-                        android:focusable="false"
                         android:fontFamily="@font/robotoregular"
                         android:inputType="none"
-                        android:text="5"
+                        android:text="0"
                         android:textAlignment="center"
                         android:textSize="15sp" />
 
@@ -578,13 +579,16 @@
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <CheckBox
+                        android:id="@+id/camisa5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:text="premium"
-                        android:textColor="@color/fondo_azul_1" />
+                        android:onClick="capturardatos"
+                        android:text="Camisa Moda Fina"
+                        android:textColor="@color/white"
+                        android:textSize="1dp" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -694,13 +698,16 @@
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
 
-                            <TextView
+                            <CheckBox
+                                android:id="@+id/camisa6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
-                                android:layout_centerVertical="true"
-                                android:text="Super premium"
-                                android:textColor="@color/fondo_azul_1" />
+                                android:layout_marginEnd="-1dp"
+                                android:onClick="capturardatos"
+                                android:text="Camisa Verdana"
+                                android:textColor="@color/white"
+                                android:textSize="1dp" />
                         </RelativeLayout>
 
                         <RelativeLayout
@@ -761,7 +768,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="44dp"
         android:background="@color/fondo_azul_2">
 
         <ImageView
@@ -776,15 +783,26 @@
         <TextView
             android:id="@+id/hola2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="12dp"
             android:layout_marginRight="24dp"
-            android:gravity="right"
-            android:text="Bienvenido usuario"
+            android:gravity="center"
+            android:text="Resumen de la compra"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
     </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/paleta_color_fondo"
+            android:padding="9dp"
+            android:orientation="vertical">
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/resultados"
         android:layout_width="match_parent"
@@ -796,11 +814,98 @@
         app:cardCornerRadius="18dp">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_margin="10dp">
+            android:layout_height="40dp"
+            android:background="@color/fondo_azul_00">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Productos Seleccionados"
+                android:textColor="@color/fondo_azul_1"
+                android:textSize="14dp" />
+
         </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/resultadoropa"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:padding="12dp"
+                android:layout_marginTop="40dp"
+                android:text="resultados de la compra"
+                android:textColor="@color/fondo_azul_5"
+                android:textSize="17dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            >
 
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/fondo_azul_00">
+
+                <TextView
+                    android:id="@+id/calcular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Costo de los Productos Seleccionados"
+                    android:textColor="@color/fondo_azul_1"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@id/calcular"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/fondo_azul_0"
+                android:onClick="calcular"
+                android:text="Calcular Totales"
+                android:textColor="@color/fondo_azul_5"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/esperando"
+                android:layout_width="265dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="55dp"
+                android:layout_marginRight="34dp"
+                android:fontFamily="@font/robotoregular"
+                android:gravity="right"
+                android:hint="Esperando..."
+                android:textColor="@color/fondo_azul_5"
+                android:textColorHint="@color/grisparatexto"
+                android:textSize="20sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:backgroundTint="@color/fondo_azul_0"
+            android:textColor="@color/fondo_azul_5"
+            android:text="finalizar compra" />
+
+    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

@@ -4,7 +4,9 @@ package com.example.a2doproyectofinal;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     TextView salir;
     EditText usuario, pass;
     String T_usuario, T_contraseña;
+    SharedPreferences preferences;
     String url ="https://teen-informatics.000webhostapp.com/proyecto%20final/login.php";
     String _url = "https://www.youtube.com/channel/UCo_RZIP6prunIEL8tlLz7VQ/featured";
 
@@ -96,6 +99,12 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(String response) {
                     progressDialog.dismiss();
+                    Intent i = new Intent(getApplicationContext(), Menu.class);
+                    preferences=getSharedPreferences("credenciales", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putString("user",usuario.getText().toString());
+                    editor.commit();
+                    startActivity(i);
 
                     if (response.equalsIgnoreCase("Iniciaste Sesión Correctamente")) {
                         usuario.setText("");
